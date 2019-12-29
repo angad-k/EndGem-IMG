@@ -1,0 +1,248 @@
+.TopPane
+{
+    height : 10%;
+    background-color : #0EA2F4;
+    position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 5%;
+}
+.logo
+{
+    height : 100%;
+    float: left;
+    margin-left: 2px;
+}
+
+.pressablebtn
+{
+    height: 100%;
+    width:100%;
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    background-color: #0EF4D6;
+    text-align: center;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.pressablebtn:hover
+{
+    background-color: rgb(155, 238, 227);
+}
+.pressedbtn
+{
+    height: 100%;
+    width:100%;
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    background-color: #696969;
+    text-align: center;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.pressedbtn:hover
+{
+    background-color: #8b8b8b;
+}
+.CoursesPane
+{
+    height:60%;
+    width:40%;
+    position: absolute;
+    left: 50%;
+    top:40%;
+    margin-left: -20%;
+    vertical-align: bottom;
+    background-color: #0EF4D6;
+    text-align: center;
+    box-shadow: 5px 5px 5px #696969;
+}
+.options
+{
+    height: 60%;
+    width: 3%;
+    float: right;
+    margin-right: 2px;
+    vertical-align: middle;
+    position: absolute;
+    top:20%;
+    right: 0.5%;
+   
+
+}
+.plus
+{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+.plusbutton
+{
+    height: 60%;
+    width : 3%;
+    float: right;
+    margin-right: 2px;
+    vertical-align: middle;
+    position: absolute;
+    top:20%;
+    right: 4%; 
+    background-color : #0EA2F4;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.course
+{
+    height: 7%;
+    width: 80%;
+    background-color: #0EF4D6;
+    margin-left: 10%;
+    box-shadow: 3px 3px 3px #696969;
+    text-align: right;
+    position: relative;
+    margin-top: 10px;
+   
+}
+.pdflogo
+{
+    height: 90%;
+    margin-left: 0.5%;
+    float: left;
+    
+}
+.titledate
+{
+    height: 100%;
+    margin-left: 4.5%;
+    float: left;
+    
+}
+.date
+{
+    color: #424242;
+}
+.download
+{
+    height: 100%;
+    float: right;
+}
+.downloadbtn
+{
+    height: 100%;
+    float: right;
+    background-color: #0EF4D6;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+body
+{
+    text-align: center;
+    margin: 0px;
+    font-family: 'Roboto';font-size: 22px;
+    background-color: #C3F0FF;
+}
+.addform
+{
+    width: 50%;
+    background-color: #0EF4D6;
+    margin-left: 25%;
+    box-shadow: 3px 3px 3px #696969;
+    
+    position: relative;
+    margin-top: 10px;   
+}
+.addingform
+{
+    
+    width: 70%;
+    margin-left: 15%;
+}
+.textinput
+{    
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.textinput:focus
+{
+    box-sizing: border-box;
+    border: 3px solid #555;
+}
+.dropdownc
+{
+    outline: none;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.uploader
+{
+    margin: auto;
+}
+.nodown
+{
+    height:25%;
+    float: right;
+    font-size: 17px;  
+    margin-right: 5px; 
+    
+}
+h4
+{
+    text-align: center;
+}
+.blackline
+{   
+    display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #555;
+    padding: 0;
+    
+}
+.submitter
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #0EA2F4;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    font-size: large;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.submitter:hover
+{
+    background-color: rgb(49, 100, 243);
+}
+
+
