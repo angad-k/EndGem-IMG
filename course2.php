@@ -133,7 +133,7 @@
 
                     <?php 
                     // write query for all pizzas
-	                $sql2 = 'SELECT title, downloads, course, Date FROM coursecontent ORDER BY downloads DESC LIMIT 5';
+	                $sql2 = 'SELECT title, downloads, course, Date FROM coursecontent ORDER BY downloads DESC LIMIT 15';
 	                // get the result set (set of rows)
 	                $result2 = mysqli_query($conn, $sql2);
 	                // fetch the resulting rows as an array
