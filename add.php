@@ -1,7 +1,7 @@
 <?php
 $target_dir = "uploads/";
 
-// Check if image file is a actual image or fake image
+
 if(isset($_POST["submit"])) {
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
     $uploadOk = 1;
