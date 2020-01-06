@@ -25,7 +25,7 @@ if(isset($_POST["submit"])) {
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
             echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
 
-            $conn = mysqli_connect('localhost', 'clienthai', 'test1234', 'endgem');
+            $conn = mysqli_connect('localhost', 'clienthai', 'YES', 'endgem');
 
             // check connection
 	        if(!$conn){
@@ -39,19 +39,19 @@ if(isset($_POST["submit"])) {
             
             if($_POST["course"] == "course1")
             {
-                $sql = "INSERT INTO course1(title, url, downloads, Date) VALUES('$title','$url','0', '$date')";
+                $sql = "INSERT INTO coursecontent(title, url, downloads, Date, course) VALUES('$title','$url','0', '$date', '1')";
             }
             if($_POST["course"] == "course2")
             {
-                $sql = "INSERT INTO course2(title, url, downloads, Date) VALUES('$title','$url','0', '$date')";
+                $sql = "INSERT INTO coursecontent(title, url, downloads, Date, course) VALUES('$title','$url','0', '$date', '2')";
             }
             if($_POST["course"] == "course3")
             {
-                $sql = "INSERT INTO course3(title, url, downloads, Date) VALUES('$title','$url','0', '$date')";
+                $sql = "INSERT INTO coursecontent(title, url, downloads, Date, course) VALUES('$title','$url','0', '$date', '3')";
             }
             if($_POST["course"] == "course4")
             {
-                $sql = "INSERT INTO course4(title, url, downloads, Date) VALUES('$title','$url','0', '$date')";
+                $sql = "INSERT INTO coursecontent(title, url, downloads, Date, course) VALUES('$title','$url','0', '$date', '4')";
             }
 
 
@@ -87,8 +87,8 @@ if(isset($_POST["submit"])) {
         <div class = TopPane>
             <img  class = logo src = "resources/images/logo.png">
             
-            <img class = options src = "resources/images/options.png">
-            <button class = plusbutton id = plus onclick="window.location.href = '/EndGem/'"><img class =plus src = "resources/images/plus.png" ></button>
+            
+            <button class = back id = back onclick="window.location.href = '/EndGem/'">Back</button>
         </div>
                      
         <div class = addform>

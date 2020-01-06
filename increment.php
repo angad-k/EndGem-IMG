@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect('localhost', 'clienthai', 'test1234', 'endgem');
+$conn = mysqli_connect('localhost', 'clienthai', 'YES', 'endgem');
 if(!$conn){
     echo 'Connection error: '. mysqli_connect_error();
     }
@@ -11,25 +11,38 @@ echo "hello there";
 // Attempt update query execution
 if($_POST['course'] === 'course2' )
 {
-    $query = "UPDATE course2 SET downloads = ? WHERE url = ?";  
+    $query = "UPDATE coursecontent SET downloads = ? WHERE url = ? AND course = '2'";
+    $stmt = $conn->prepare($query);
+    $stmt->bind_param("ss", $downs, $nameurl);
+    $stmt->execute();
+    header('Location: course2.php');  
 }
 elseif($_POST['course'] === 'course1')
 {
-    $query = "UPDATE course1 SET downloads = ? WHERE url = ?";
+    $query = "UPDATE coursecontent SET downloads = ? WHERE url = ? AND course = '1'";
+    $stmt = $conn->prepare($query);
+    $stmt->bind_param("ss", $downs, $nameurl);
+    $stmt->execute();
+    header('Location: index.php');
 }
 elseif($_POST['course'] === 'course3')
 {
-    $query = "UPDATE course3 SET downloads = ? WHERE url = ?";
+    $query = "UPDATE coursecontent SET downloads = ? WHERE url = ? AND course = '3'";
+    $stmt = $conn->prepare($query);
+    $stmt->bind_param("ss", $downs, $nameurl);
+    $stmt->execute();
+    header('Location: course3.php');
 }
 elseif($_POST['course'] === 'course4')
 {
-    $query = "UPDATE course4 SET downloads = ? WHERE url = ?";
+    $query = "UPDATE coursecontent SET downloads = ? WHERE url = ? AND course = '4'";
+    $stmt = $conn->prepare($query);
+    $stmt->bind_param("ss", $downs, $nameurl);
+    $stmt->execute();
+    header('Location: course4.php');
 }
 
-$stmt = $conn->prepare($query);
-$stmt->bind_param("ss", $downs, $nameurl);
-$stmt->execute();
-header('Location: index.php');
+
 ?>
 
 
