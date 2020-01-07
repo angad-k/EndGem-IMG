@@ -9,7 +9,7 @@
 * Also, I have used a user called 'clienthai' with the password 'YES' to connect to the SQL database. Create a similar user on your database with the query :
   >CREATE USER 'clienthai'@'localhost' IDENTIFIED BY 'YES';
 * Grant the user permissions to view and update the database with the query :
-  >GRANT SELECT, INSERT, UPDATE, DELETE, FILE ON *.* TO ‘clienthai’@'localhost’;
+  >GRANT SELECT, INSERT, UPDATE, DELETE, FILE ON endgem.* TO ‘clienthai’@'localhost’;
 * Open the index.php file in EndGem and check my website out!
 ## Instructions to use the website
 * The index or the homepage shows the contents uploaded for course 1. Click on the different course buttons on the top pane to check out the courses' content.
