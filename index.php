@@ -43,8 +43,11 @@
                     </td>
                 </tr>
             </table>
-            <button class = optionsbutton id = options onclick= "showGems();"><img class = options src = "resources/images/options.png"></button>
-            <button class = plusbutton id = plus onclick="window.location.href = '/EndGem/add.php'"><img class =plus src = "resources/images/plus.png" ></button>
+            <div class = "wrapperWithPadding">
+                <button class = optionsbutton id = options onclick= "showGems();"><img class = options src = "resources/images/options.png"></button>
+                <button class = plusbutton id = plus onclick="window.location.href = '/EndGem/add.php'"><img class =plus src = "resources/images/plus.png" ></button>
+            </div>
+            
               
             <script>
                 var i =0;
